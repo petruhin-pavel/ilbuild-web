@@ -1,0 +1,427 @@
+// import =========
+@import "normalize.scss";
+
+//color =====
+$hover: #E00F0F;
+$bg-form: #F8F8F8;
+
+//main =========
+body{
+  background: #574A43;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+}
+a{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+ul{
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+h1{
+  margin: 0;
+  font-size: 25px;
+  line-height: 140%;
+}
+h2{
+  margin: 0;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 400;
+}
+.section{
+  &-title{
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.7);
+    &__portfolio{
+      margin-bottom: 60px;
+    }
+    &__form{
+      margin-bottom: 20px;
+    }
+  }
+  &-subtitle{
+    color: rgba(255, 255, 255, 0.7);
+    &__form{
+      margin-bottom: 60px;
+    }
+  }
+}
+// nav =========
+.nav{
+  &__header{
+    text-align: center;
+  }
+  &-list{
+    &__header{
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      
+    }
+  }
+  &-link{
+    &__header{
+      display: inline-block;
+      padding: 30px 10px 5px 10px;
+      transition: background 0.3s ease 0s;
+      &__first{
+        border-radius: 0px 0px 0px 10px;
+      }
+      &__last{
+        border-radius: 0px 0px 10px 0px;
+      }
+      &:hover{
+        background: $hover;
+      }
+    }
+  }
+}
+// body =========
+.container{
+  &__main{
+    margin: 0 auto;
+    width: 1140px;
+    max-width: 100%;
+    margin-top: 40px;
+    background: #1B1C1E;
+  }
+  &__secondary{
+    margin: 0 auto;
+    max-width: 90%;
+  }
+}
+// header ========
+.row{
+  &__logo{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  &__title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 57px 0;
+  }
+}
+.social{
+  &-link{
+    margin-left: 20px;
+  }
+  &-image{
+    border-radius: 50%;
+    transition: background 0.3s ease 0s;
+    &:hover{
+        background: $hover;
+      }
+  }
+  &__footer{
+    padding: 30px 0;
+  }
+}
+.header{
+  background: linear-gradient(180deg, rgba(27, 28, 30, 0) 0%, #1B1C1E 100%), url(../img/header-bg.png) center top / cover no-repeat;
+  &-title{
+    width: 260px;
+    &:after{
+      content: '';
+      display: inline-block;
+      width: 200px;
+      height: 1px;
+      background: #C4C4C4;
+      margin: 20px 0;
+    }
+    &-wrap{
+      width: 370px;
+      height: 370px;
+      border-radius: 50%;
+      background: #000;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &-subtitle{
+    width: 260px;
+  }
+}
+.button{
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  transition: background 0.3s ease 0s;
+  &:hover{
+        background: $hover;
+      }
+  &__header{
+    margin: 57px 0;
+  }
+}
+.arrow{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  transform: rotate(-45deg);
+}
+// advantages ========
+.advantages{
+  background: rgba(0, 0, 0, 0.35);
+  margin: 105px 0;
+  &-wrap{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding: 45px 15px;
+    max-width: 297px;
+  }
+  &-image{
+    margin-bottom: 37px;
+  }
+  &-title{
+    font-weight: 700;
+  }
+  &-text{
+    font-weight: 300;
+  }
+}
+// portfolio ==========
+.portfolio{
+  &-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &-item{
+    width: 626px;
+    height: 234px;
+    border-radius: 115px;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  &-link{
+    display: inline-block;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    overflow: hidden;
+  }
+  &-text{
+    //display: inline-block;
+    flex-basis: 40%;
+    line-height: 24px;
+    &__right{
+      text-align: right;
+    }
+  }
+  &-arrow{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    transform: rotate(-45deg);
+    &__right{
+      border-right: 2px solid #ffffff;
+      border-bottom: 2px solid #ffffff;
+      margin-right: 25px;
+    }
+    &__left{
+      border-left: 2px solid #ffffff;
+      border-top: 2px solid #ffffff;
+      margin-left: 25px;
+    }
+  }
+}
+// form =======
+.form{
+  &-wrap{
+    text-align: center;
+  }
+  &-input{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 200px;
+    height: 37px;
+    background: $bg-form;
+    &:focus{
+      border: 1px solid $hover;
+      outline: none;
+    }
+  }
+  &-checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    &-link{
+      display: inline-block;
+      margin-left: 10px;
+      color: #999999;
+      text-transform: none;
+    }
+  }
+  &-lable{
+    margin: 60px 0 24px 0;
+    text-align: left;
+  }
+  &-submit{
+    background: rgba(0,0,0,0);
+    color: white;
+    padding: 10px 26px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+    transition: background 0.3s ease 0s;
+    &:hover{
+        background: $hover;
+      }
+  }
+}
+// castom-checkbox =================
+.form-checkbox+.form-lable{
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.form-checkbox+.form-lable::before{
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.form-checkbox:checked+.form-lable::before{
+  border-color: $hover;
+  background-image: url(../img/check.png);
+}
+// partners ========
+.partners{
+  background: #000;
+  text-align: center;
+  margin: 70px 0 1px 0;
+  padding: 20px 0;
+  &-link{
+    color: #999999;
+    text-transform: none;
+  }
+}
+.footer{
+  background: #000;
+  text-align: center;
+}
+.copyright{
+  padding: 20px 0;
+}
+@media (max-width: 720px){
+  .advantages{
+    &-wrap{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+@media (max-width: 640px){
+  .portfolio{
+    &-item{
+      width: 230px;
+    }
+    &-text{
+      display: none;
+    }
+    &-arrow{
+      display: none;
+    }
+  }
+}
+@media (max-width: 500px){
+  .container{
+    &__main{
+      margin-top: 0px;
+    }
+  }
+  .nav__desktop{
+    display: none;
+  }
+}
+@media (max-width: 420px){
+  h1{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 13px;
+  }
+  .row{
+    &__logo{
+      padding-top: 25px;
+    }
+    &__title{
+      padding: 30px 0;
+    }
+  }
+  .header{
+    &-title{
+      &:after{
+        margin: 10px 0;
+      }
+      &-wrap{
+        width: 300px;
+        height: 300px;
+      }
+    }
+    
+  }
+  .social{
+    &__desktop{
+      display: none;
+    }
+  }
+  .arrow{
+    display: none;
+  }
+  .portfolio{
+    &-link{
+      width: 200px;
+      height: 200px;
+    }
+    &-item{
+      width: 200px;
+      height: 200px;
+    }
+    &-image{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
