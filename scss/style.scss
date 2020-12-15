@@ -143,6 +143,7 @@ h2{
       margin: 20px 0;
     }
     &-wrap{
+      position: relative;
       width: 370px;
       height: 370px;
       border-radius: 50%;
@@ -156,6 +157,43 @@ h2{
   }
   &-subtitle{
     width: 260px;
+  }
+}
+.burger{
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  left: 15px;
+  top: 25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  &-item{
+    position: relative;
+    display: inline-block;
+    width: 29px;
+    height: 2px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    &::before, &::after{
+      content: '';
+      position: absolute;
+      display: inline-block;
+      left: 0;
+      width: 29px;
+      height: 2px;
+      border-radius: 5px;
+      background: #FFFFFF;
+    }
+    &::before{
+      top: -7px;
+    }
+    &::after{
+      top: 7px;
+    }
   }
 }
 .button{
@@ -449,6 +487,9 @@ h2{
       width: 100%;
       height: 100%;
     }
+  }
+  .burger{
+    display: flex;
   }
 }
 
