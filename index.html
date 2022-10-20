@@ -4,73 +4,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WEB - STUDIO | ilbuild</title>
+  <title>WEB-Studio | ilbuild</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="header">
+  <div class="wraper">
     <div class="container">
+      <nav class="nav">
+        <div class="nav-list nav-list__desktop">
+          <a href="#" class="nav-link nav-link__desktop">Главная</a>
+          <a href="#" class="nav-link nav-link__desktop">Преимущества</a>
+          <a href="#" class="nav-link nav-link__desktop">Наши работы</a>
+          <a href="#" class="nav-link nav-link__desktop">Контакты</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="wraper wraper__body">
+    <header class="header">
+      <div class="container">
 
-      <nav class="mobile-nav">
+        <a href="index.html" class="logo-link"><img src="img/Logo.png" alt="ilbuild logo" class="logo"></a>
 
-        <div class="mobile-nav-icon">
-          <span class="mobile-nav-item"></span>
-        </div><!-- burger-icon -->
 
-        <div class="header-social">
-          <a href="#" class="social-link">
-            <img src="img/social/instagram.svg" alt="instagram icon" class="social-item">
-          </a>
-          <a href="#" class="social-link">
-            <img src="img/social/vk.svg" alt="vk icon" class="social-item">
-          </a>
-          <a href="#" class="social-link">
-            <img src="img/social/whatsapp.svg" alt="whatsapp icon" class="social-item">
+        <div class="header-body">
+          <div class="title-wrap">
+            <div class="title-circle title-circle__front">
+              <h1 class="title-text">Разрабатывем сайты для малого и среднего бизнеса</h1>
+              <p class="title-subtitle">У нас можно заказать дизайн и разработку небольшого сайта или интернет-магазина
+              </p>
+              <div class="humburger-wrap">
+                <div class="humburger">
+                  <span class="humburger-item"></span>
+                </div>
+              </div>
+            </div>
+            <div class="title-circle title-circle__back">
+              <ul class="nav-list nav-list__mobile">
+                <li class="nav-item"><a href="#" class="nav-link">Преимущества</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Наши работы</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+              </ul>
+              <div class="humburger-wrap humburger-wrap__active">
+                <div class="humburger humburger__active">
+                  <span class="humburger-item humburger-item__active"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <a href="#" class="touch-button touch-button__header">Бесплатная консультация</a>
+
+          <a href="#" class="arrow">
+            <span class="arrow-down arrow-down__left"></span>
+            <span class="arrow-down arrow-down__right"></span>
           </a>
         </div>
+      </div><!-- container -->
 
-      </nav>
+    </header><!-- header -->
 
-      <nav class="nav burger__nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#" class="link nav-link">Преимущества</a></li>
-          <li class="nav-item"><a href="#" class="link nav-link">Наши работы</a></li>
-          <li class="nav-item"><a href="#" class="link nav-link">О нас</a></li>
-          <li class="nav-item"><a href="#" class="link link-toch ">Бесплатная консультация</a></li>
-        </ul>
-      </nav>
-
-      <img src="img/Logo_x3.png" alt="ilbuild logo" class="logo">
-
-
-      <h1 class="header-title">
-        <span class="header-title__wrap">Разрабатывем сайты для</span>
-        <br>
-        <span class="header-title__wrap">малого и среднего бизнеса.</span>
-      </h1>
-      <p class="header-subtitle">
-        У нас можно заказать дизайн и разработку небольшого сайта или интернет-магазина
-      </p>
-      <div class="header__link__wrap">
-        <a href="#" class="link link-toch header__link">Бесплатная консультация</a>
+    <section class="portfolio">
+      <h2 class="section-title">Наши работы</h2>
+      <div class="portfolio-wrap">
+        <div class="portfolio-item">
+          <img src="img/portfolio/hunger.png" alt="" class="portfolio-image">
+        </div>
+        <div class="portfolio-item">
+          <img src="img/portfolio/spaceX.png" alt="" class="portfolio-image">
+        </div>
+        <div class="portfolio-item"></div>
+        <div class="portfolio-item"></div>
       </div>
+    </section><!-- portfolio -->
 
-
-      <div class="arrow-wrap">
-        <span class="arrow-down arrow-down__left"></span>
-        <span class="arrow-down arrow-down__right"></span>
-      </div>
-
-    </div><!-- /container -->
-  </header>
+    <section class="advantages">
+      <div class="advantages-bg"></div>
+    </section><!-- advantages -->
+  </div><!-- wrapper -->
 
 
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="js/script.js"></script>
+
+
+
+
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
